@@ -28,12 +28,14 @@ while k:
         f=input("Pra calcular outra equação, digita 'sim', se quiser meter o pé, digita 'não'")
         if f==str('não'):
             k=False
+        print("")
     elif delta==0:
         print("Essa sua equação ai tem só uma raiz, que é esse numerosinho ai embaixo")
         print(-b/2*a)
         f=input("Pra calcular outra equação, digita 'sim', se quiser meter o pé, digita 'não'")
         if f==str('não'):
             k=False
+        print("")
     else:
         print("Essa sua equação ai tem duas raizes, que são esses numerosinho ai embaixo")
         print((-b+delta**0.5)/2*a)
@@ -41,8 +43,9 @@ while k:
         f=input("Pra calcular outra equação, digita 'sim', se quiser meter o pé, digita 'não'")
         if f==str('não'):
             k=False
-            
-print("")
+        print("")
+    
+print("")   
 print("Suave")
 print("É nós")
 
