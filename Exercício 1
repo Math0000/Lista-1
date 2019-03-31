@@ -41,7 +41,8 @@ while k:
         f=input("Pra calcular outra equação, digita 'sim', se quiser meter o pé, digita 'não'")
         if f==str('não'):
             k=False
-
+            
+print("")
 print("Suave")
 print("É nós")
 
