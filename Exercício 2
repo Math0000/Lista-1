@@ -12,6 +12,7 @@ print("Pra começar, escolhe ai os numeros e a quantidade de multiplos que tu")
 print("quer deles. \n")
 print("............................................................................ \n")
 
+k=True
 while True:
     print("")
     a=int(input('Fala um dos numeros que você vai buscar os multiplos em comum \n'))
@@ -24,10 +25,11 @@ while True:
         d=a
     else:
         d=b
-
-    while True:
+    
+    j=True
+    while j:
         if d%a==0 and d%b==0:
-            break
+            j=False
         else:
             d+=1
 
@@ -41,8 +43,9 @@ while True:
     print("Se tu quiser calcular com outros numeros ou outra quantidade de multiplos")
     f=str(input("digita 'sim', se não quiser, digita 'não'"))
     if f!=str('sim'):
-        break
-        
-print("")
+        k=False
+    print("")
+    
+print("")   
 print("Suave")
 print("É nós")
