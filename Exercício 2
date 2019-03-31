@@ -1,0 +1,48 @@
+'''
+Esse programa calcula os n primeiros multiplos dos numeros
+Aluno: Matheus Moreira do Nascimento
+DRE: 119042060
+Curso: Matemática Aplicada
+Disciplina: Topicos da Matemática Aplicada A
+'''
+print("............................................................................ \n")
+print("Nesse programa aqui você pode calcular os n primeiros multiplos em comum")
+print("de 2 numeros. \n")
+print("Pra começar, escolhe ai os numeros e a quantidade de multiplos que tu")
+print("quer deles. \n")
+print("............................................................................ \n")
+
+while True:
+    print("")
+    a=int(input('Fala um dos numeros que você vai buscar os multiplos em comum \n'))
+    b=int(input('Fala o outro ai também \n'))    
+    c=int(input('Até que multiplo em comum deles você quer calcular? \n'))
+
+    T=[]
+
+    if a>b:
+        d=a
+    else:
+        d=b
+
+    while True:
+        if d%a==0 and d%b==0:
+            break
+        else:
+            d+=1
+
+    for i in range(1,c+1):
+        e=d*i
+        T .append(e)
+    
+    print(T)
+   
+    print("Esses são os", c," primeiros multiplos de",a,"e",b,"\n")
+    print("Se tu quiser calcular com outros numeros ou outra quantidade de multiplos")
+    f=str(input("digita 'sim', se não quiser, digita 'não'"))
+    if f!=str('sim'):
+        break
+        
+print("")
+print("Suave")
+print("É nós")
