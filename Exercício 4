@@ -42,6 +42,15 @@ P9y=37
 P10x=23
 P10y=44
 
+P11x=27
+P11y=48
+
+P12x=12
+P12y=14
+
+P13x=8
+P13y=35
+
 k=True
 while k:
     T=[]    
@@ -50,7 +59,7 @@ while k:
     print("")
 
     print("Agora escreve a coordenanda y também ")
-    b=float(input("Lembrando que 0 < y < 50"))
+    b=float(input("Lembrando que 0 < y < 50 "))
     print("")
     
     r=float(input("Em que raio em Km você quer checar se existem postos? "))
@@ -83,8 +92,16 @@ while k:
         T .append(str("Posto 9"))
 
     if ((P10x-a)**2+(P10y-b)**2<=r**2):
-        T .append(str("Posto 1o"))
+        T .append(str("Posto 10"))
 
+    if ((P11x-a)**2+(P11y-b)**2<=r**2):
+        T .append(str("Posto 11"))
+
+    if ((P12x-a)**2+(P12y-b)**2<=r**2):
+        T .append(str("Posto 12"))
+
+    if ((P13x-a)**2+(P13y-b)**2<=r**2):
+        T .append(str("Posto 13"))
 
     if not T:
         print("Então brother, não tem nenhum posto num raio de",r,"km de você")
@@ -92,7 +109,7 @@ while k:
         
     else:
         print("")
-        print("Os postos que estão no raio escolhido por você são:")
+        print("Os postos que estão num raio de",r,"km de você são:")
         print(T)
         print("")
 
