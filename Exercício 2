@@ -37,8 +37,10 @@ while True:
         e=g*b
         g+=1
     
+    print("A soma de todos os multiplos de ",a," e ",b," menores que ",c," é:")    
+    print("................................................................. ")
     print(z)
-    print("Essa é a soma de todos os multiplos de ",a," e ",b," menores que ",c,"\n")
+    print("................................................................. \n")
     print("Se tu quiser calcular com outros numeros ou com outra restrição")
     f=str(input("digita 'sim', se não quiser, digita 'não'"))
     if f!=str('sim'):
