@@ -7,7 +7,7 @@ Disciplina: Topicos da Matemática Aplicada A
 '''
 print("................................................................................\n")
 print("Essa parada aqui calcula equações do segundo grau completas, do tipo ax²+bx+c")
-print("Pra começar, escreva as variaveis da sua equação\n")
+print("Pra começar, escreva as variaveis da sua equação \n")
 print("................................................................................\n")
 
 k=True
